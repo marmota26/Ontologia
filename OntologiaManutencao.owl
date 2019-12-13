@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#FerramentaEmUsoTecnico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#FerramentaEmUsoTecnico">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoUsandoFerramenta"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaEmRealizacaoTecnico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaEmRealizacaoTecnico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoRealizandoTarefa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerFerramenta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerFerramenta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerTecnico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerTecnico">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoPodeRealizarTarefa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoPodeRealizarTarefa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoPodeRealizarTarefa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoRealizandoTarefa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoRealizandoTarefa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoUsandoFerramenta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoUsandoFerramenta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Finalizado"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Finalizado"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoOlhal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoUniversal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoOlhal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoOlhal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoUniversal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoUniversal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoUniversal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bastao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#EmUso"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#EmUso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#EmUso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#EmUso">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#FerramentaEmUsoTecnico"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ferramenta">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Finalizado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Finalizado">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Impossivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Impossivel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Possivel"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Possivel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Livre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Livre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ocupado"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ocupado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarra"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaimePreparado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaimePreparado">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerFerramenta"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca"/>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#EmUso"/>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaRequerTecnico"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ocupado"/>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Requerimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Novato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Novato">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ocupado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Ocupado">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TecnicoRealizandoTarefa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Possivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Possivel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaimePreparado"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Realizando">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#TarefaEmRealizacaoTecnico"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Requerimento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Requerimento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tarefa">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+        <TecnicoRealizandoTarefa rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraEsquerda"/>
+        <TecnicoUsandoFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Disponivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#BastaoGarra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Livre"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Novato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Novato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <TecnicoRealizandoTarefa rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaDireita"/>
+        <TecnicoUsandoFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Livre"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Livre"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Tecnico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Veterano"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AFazer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#MontarAndaime"/>
+        <TarefaRequerFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1"/>
+        <TarefaRequerFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2"/>
+        <TarefaRequerFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3"/>
+        <TarefaRequerFerramenta rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4"/>
+        <TarefaRequerTecnico rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice"/>
+        <TarefaRequerTecnico rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave"/>
+        <TarefaRequerTecnico rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraDireita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraDireita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraEsquerda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraEsquerda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaDireita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaDireita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaEsquerda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaEsquerda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Finalizado"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Alice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#AndaimePeca4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Bob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Chuck"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#ColarSela2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Dave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#Erin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraDireita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderBastaoGarraEsquerda"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaDireita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marmota/ontologies/2019/11/untitled-ontology-8#PrenderColarSelaEsquerda"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
